@@ -1,0 +1,20 @@
+.clock {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.bar {
+    
+}
+
+.client-title{
+    color:rgba(255, 255, 255, 0.549);
+}
+
+.left {
+    font-size: 14px;
+}
+
+.battery {
+    font-size: 14px;
+}
