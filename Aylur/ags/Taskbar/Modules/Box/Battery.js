@@ -1,6 +1,6 @@
 const battery = await Service.import("battery")
 
-export function Label_Battery()
+export function Box_Battery()
 {
     return Widget.Box({
         class_name: "battery",

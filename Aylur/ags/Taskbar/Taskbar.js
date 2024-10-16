@@ -1,7 +1,9 @@
-import { Label_Battery } from "./Modules/Labels/Battery.js";
-import { Label_ClientTitle } from "./Modules/Labels/ClientTitle.js";
-import { Label_Clock } from "./Modules/Labels/Clock.js"
-import { Label_PkgCount } from "./Modules/Labels/PackageCount.js";
+import { Box_Battery } from "./Modules/Box/Battery.js";
+import { Box_Workspace} from "./Modules/Box/Workspace.js";
+
+import { Label_ClientTitle } from "./Modules/Label/ClientTitle.js";
+import { Label_Clock } from "./Modules/Label/Clock.js"
+import { Label_PkgCount } from "./Modules/Label/PackageCount.js";
 
 
 function Left() {
@@ -20,7 +22,8 @@ function Right(){
         hpack: "end",
         spacing: 8,
         children:[
-            Label_Battery(),
+            Box_Workspace(),
+            Box_Battery(),
         ]
     });
 }
