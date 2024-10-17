@@ -3,6 +3,7 @@ import { Box_Workspace} from "./Modules/Box/Workspace.js";
 
 import { Label_ClientTitle } from "./Modules/Label/ClientTitle.js";
 import { Label_Clock } from "./Modules/Label/Clock.js"
+import { Label_langauge } from "./Modules/Label/Language.js";
 import { Label_PkgCount } from "./Modules/Label/PackageCount.js";
 
 
@@ -12,6 +13,7 @@ function Left() {
         class_name: "left",
         children: [
             Label_PkgCount(),
+            Label_langauge(),
             Label_ClientTitle(),
         ],
     })
