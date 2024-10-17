@@ -7,6 +7,15 @@
     color:rgba(255, 255, 255, 0.549);
 }
 
+.defaultDarkerLabel {
+    color:rgba(255, 255, 255, 0.549);
+    font-size: 14px
+}
+
+.defaultDarkerLaptopLabel {
+    color:rgba(255, 255, 255, 0.549);
+    font-size: 19px;
+}
 
 
 

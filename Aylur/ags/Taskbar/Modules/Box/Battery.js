@@ -1,9 +1,14 @@
 const battery = await Service.import("battery")
+import { ctypeOut } from "../../Taskbar.js"
 
 export function Box_Battery()
 {
     return Widget.Box({
-        class_name: "battery",
+        class_name: (ctypeOut == "3")?
+                    "defaultLabel"
+                    :
+                    "defaultLaptopLabel",
+
         visible: battery.bind("available"),
         children: [
             Widget.Label({
