@@ -1,8 +1,8 @@
 import { taskBar } from "./Taskbar/Taskbar.js";
 
 App.config({
-    style: "./style.css",
+    style: "./style.laptop.css",
     windows: [
         taskBar(),
     ]
-})
+});
