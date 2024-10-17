@@ -8,6 +8,7 @@ import { Label_PkgCount } from "./Modules/Label/PackageCount.js";
 
 import { computerType, ComputerTypeEnum } from "./Modules/DesktopType.js";
 
+
 function Left() {
     return Widget.Box({
         spacing: 8,
@@ -22,8 +23,6 @@ function Left() {
         ],
     })
 }
-
-console.log(computerType.value.toString());
 
 function Right(){
     return Widget.Box({
