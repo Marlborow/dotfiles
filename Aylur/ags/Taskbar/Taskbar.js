@@ -6,11 +6,15 @@ import { Label_Clock } from "./Modules/Label/Clock.js"
 import { Label_langauge } from "./Modules/Label/Language.js";
 import { Label_PkgCount } from "./Modules/Label/PackageCount.js";
 
+import { computerType, ComputerTypeEnum } from "./Modules/DesktopType.js";
 
 function Left() {
     return Widget.Box({
         spacing: 8,
-        class_name: "left",
+        class_name: (computerType.value.toString() == ComputerTypeEnum.Desktop.toString())?
+                    "defaultLabel"
+                    :
+                    "defaultLaptopLabel",
         children: [
             Label_PkgCount(),
             Label_langauge(),
@@ -18,6 +22,8 @@ function Left() {
         ],
     })
 }
+
+console.log(computerType.value.toString());
 
 function Right(){
     return Widget.Box({
@@ -47,6 +53,7 @@ export function taskBar(monitor = 0)
         monitor,
         anchor: ["top", "left", "right"],
         exclusivity: "exclusive",
+        exclusive: true,
         child: Widget.CenterBox({
             start_widget: Left(),
             center_widget: Center(),

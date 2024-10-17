@@ -7,10 +7,13 @@
     color:rgba(255, 255, 255, 0.549);
 }
 
-.left {
-    font-size: 14px;
+
+
+
+.defaultLabel {
+    font-size: 14px
 }
 
-.battery {
-    font-size: 14px;
+.defaultLaptopLabel {
+    font-size: 19px;
 }
